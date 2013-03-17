@@ -2,7 +2,7 @@
 # Like a smaller, lamer thread pool.
 #
 class ThreadPuddle
-  def initialize capacity=10
+  def initialize capacity
     @capacity = capacity
     @threads = []
   end
@@ -25,7 +25,7 @@ class ThreadPuddle
   end
 
   #
-  # Current size of the puddle.
+  # Number of threads currently occupying the puddle.
   #
   def size
     sweep
@@ -40,7 +40,7 @@ class ThreadPuddle
   # @see ThreadPuddle#block
   # @return the new Thread object
   #
-  def spawn *args, &blk
+  def spawn *args, &blk #:yields: *args
     # wait for a slot to open
     block
     # add the new thread

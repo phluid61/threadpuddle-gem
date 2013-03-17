@@ -8,4 +8,4 @@ rvm:
   - jruby-18mode
   - jruby-head
   - rbx-19mode
-  - rbx-18mode
+  #- rbx-18mode

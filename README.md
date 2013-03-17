@@ -5,8 +5,12 @@ Like a smaller, lamer thread pool.
 
 ----
 
+## Public Class Methods
+
 ### `ThreadPuddle.new(capacity)`
 Creates a new ThreadPuddle object, with a fixed capacity.
+
+## Public Instance Methods
 
 ### `tp.capacity`
 Retrieves the ThreadPuddle object's capacity.

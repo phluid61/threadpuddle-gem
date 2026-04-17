@@ -3,9 +3,10 @@
 # Like a smaller, lamer thread pool.
 #
 class ThreadPuddle
-  def initialize capacity
+  def initialize capacity, klass=Thread
     @capacity = capacity
     @threads = []
+    @klass = klass
   end
 
   attr_reader :capacity
@@ -45,7 +46,7 @@ class ThreadPuddle
     # wait for a slot to open
     block
     # add the new thread
-    @threads << (t = Thread.new(*args, &blk))
+    @threads << (t = @klass.new(*args, &blk))
     t
   end
 

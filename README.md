@@ -13,7 +13,7 @@ Creates a new ThreadPuddle object, with a fixed capacity.
 To use with a different threading model, specify a different `klass`, for example:
 
 ```ruby
-threadpuddle = ThreadPuddle.new capacity, ForkingThread
+tp = ThreadPuddle.new c, ForkingThread
 ```
 
 ## Public Instance Methods

@@ -51,3 +51,4 @@ Kills all threads in the puddle.
 ----
 
 [![Test](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml/badge.svg)](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml)
+

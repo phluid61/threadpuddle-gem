@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    threadpuddle (0.1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (4.7.5)
+    power_assert (3.0.1)
+    rake (13.4.2)
+    test-unit (3.7.7)
+      power_assert
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  minitest (~> 4.0)
+  rake
+  test-unit (~> 3.0)
+  threadpuddle!
+
+BUNDLED WITH
+   2.4.18

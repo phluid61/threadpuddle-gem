@@ -7,8 +7,14 @@ Like a smaller, lamer thread pool.
 
 ## Public Class Methods
 
-### `ThreadPuddle.new(capacity)`
+### `ThreadPuddle.new(capacity, klass=Thread)`
 Creates a new ThreadPuddle object, with a fixed capacity.
+
+To use with a different threading model, specify a different `klass`, for example:
+
+```ruby
+threadpuddle = ThreadPuddle.new capacity, ForkingThread
+```
 
 ## Public Instance Methods
 

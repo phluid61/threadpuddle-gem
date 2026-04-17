@@ -5,7 +5,7 @@ require "#{File.dirname File.dirname(__FILE__)}/lib/threadpuddle"
 require "#{File.dirname File.dirname(__FILE__)}/lib/forkingthread"
 class Test_threadpuddle_forking < Test::Unit::TestCase
   def setup
-    omit_if RUBY_ENGINE == 'jruby', 'fork is not available on JRuby'
+    omit_unless Process.respond_to?(:fork), 'fork is not available on this platform'
   end
 
   def test_threadpuddle_forking

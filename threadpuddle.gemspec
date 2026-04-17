@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.email   = ['matthew@kerwin.net.au']
   s.files   = ['lib/threadpuddle.rb', 'lib/forkingthread.rb']
   s.homepage = 'https://rubygems.org/gems/threadpuddle'
-  s.license = 'ISC License'
+  s.license = 'ISC'
 end

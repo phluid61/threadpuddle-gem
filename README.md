@@ -50,4 +50,4 @@ Kills all threads in the puddle.
 
 ----
 
-[![Build Status](https://travis-ci.org/phluid61/threadpuddle-gem.png)](https://travis-ci.org/phluid61/threadpuddle-gem)
+[![Test](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml/badge.svg)](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml)

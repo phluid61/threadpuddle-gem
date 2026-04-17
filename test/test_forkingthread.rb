@@ -5,6 +5,7 @@ require "#{File.dirname File.dirname(__FILE__)}/lib/forkingthread"
 
 class Test_forkingthread < Test::Unit::TestCase
   def setup
+    omit_if RUBY_ENGINE == 'jruby', 'fork is not available on JRuby'
     @fts = []
   end
 

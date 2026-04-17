@@ -4,6 +4,10 @@ $VERBOSE = true
 require "#{File.dirname File.dirname(__FILE__)}/lib/threadpuddle"
 require "#{File.dirname File.dirname(__FILE__)}/lib/forkingthread"
 class Test_threadpuddle_forking < Test::Unit::TestCase
+  def setup
+    omit_if RUBY_ENGINE == 'jruby', 'fork is not available on JRuby'
+  end
+
   def test_threadpuddle_forking
     # Creation and attributes
     c = 5

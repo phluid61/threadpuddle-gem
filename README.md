@@ -58,7 +58,18 @@ Kills all threads in the puddle.
  @return the number of threads killed
 ```
 
-----
+## Contributor Code of Conduct
 
-[![Test](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml/badge.svg)](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml)
+This repository is subject to a [Contributor Code of Conduct](code_of_conduct.md)
+adapted from the [Contributor Covenant][cc], version 3.0, available at
+<https://www.contributor-covenant.org/version/3/0/>
+
+
+[cc]: https://www.contributor-covenant.org
+
+
+## Licence
+
+This project is licensed under the ISC licence. See [LICENSE](LICENSE)
+for details
 

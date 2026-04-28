@@ -2,38 +2,41 @@
 layout: default
 title: "ThreadPuddle"
 ---
-<h1>ThreadPuddle</h1>
+<h1><a href="#threadpuddle" aria-hidden="true" class="anchor" id="threadpuddle"></a>ThreadPuddle</h1>
+<p><a href="http://badge.fury.io/rb/threadpuddle"><img src="https://badge.fury.io/rb/threadpuddle.png" alt="Gem Version" /></a>
+<a href="https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml"><img src="https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml/badge.svg" alt="Test" /></a>
+<a href="code_of_conduct.html"><img src="https://img.shields.io/badge/Contributor%20Covenant-v3.0%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a></p>
 <p>Like a smaller, lamer thread pool.</p>
 <hr />
-<h2>Public Class Methods</h2>
-<h3><code>ThreadPuddle.new(capacity, klass=Thread)</code></h3>
+<h2><a href="#public-class-methods" aria-hidden="true" class="anchor" id="public-class-methods"></a>Public Class Methods</h2>
+<h3><a href="#threadpuddlenewcapacity-klassthread" aria-hidden="true" class="anchor" id="threadpuddlenewcapacity-klassthread"></a><code>ThreadPuddle.new(capacity, klass=Thread)</code></h3>
 <p>Creates a new ThreadPuddle object, with a fixed capacity.</p>
 <p>To use with a different threading model, specify a different <code>klass</code>, for example:</p>
-<pre><code class="language-ruby">tp = ThreadPuddle.new c, ForkingThread
-</code></pre>
-<h2>Public Instance Methods</h2>
-<h3><code>tp.capacity</code> → int</h3>
+<pre lang="ruby" style="background-color:#2b303b;"><code><span style="color:#c0c5ce;">tp = </span><span style="color:#ebcb8b;">ThreadPuddle</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">new</span><span style="color:#c0c5ce;"> c, </span><span style="color:#bf616a;">ForkingThread
+</span></code></pre>
+<h2><a href="#public-instance-methods" aria-hidden="true" class="anchor" id="public-instance-methods"></a>Public Instance Methods</h2>
+<h3><a href="#tpcapacity--int" aria-hidden="true" class="anchor" id="tpcapacity--int"></a><code>tp.capacity</code> → int</h3>
 <p>Retrieves the ThreadPuddle object's capacity.</p>
-<h3><code>tp.size</code> → int</h3>
+<h3><a href="#tpsize--int" aria-hidden="true" class="anchor" id="tpsize--int"></a><code>tp.size</code> → int</h3>
 <p>Number of threads currently occupying the puddle.</p>
-<h3><code>tp.block</code> → <em>tp</em></h3>
+<h3><a href="#tpblock--tp" aria-hidden="true" class="anchor" id="tpblock--tp"></a><code>tp.block</code> → <em>tp</em></h3>
 <p>Blocks execution of the calling thread until there's a free slot in the puddle.</p>
 <p>WARNING: there is no guarantee this will ever return.</p>
-<h3><code>tp.spawn(*args) {|*args| ... }</code> → Thread</h3>
+<h3><a href="#tpspawnargs-args----thread" aria-hidden="true" class="anchor" id="tpspawnargs-args----thread"></a><code>tp.spawn(*args) {|*args| ... }</code> → Thread</h3>
 <p>Spawns a new thread in the puddle.</p>
 <p>If the puddle is full, this call blocks.</p>
-<pre><code> @yields *args
- @see ThreadPuddle#block
- @return the new Thread object
-</code></pre>
-<h3><code>tp.join</code> → <em>tp</em></h3>
+<pre style="background-color:#2b303b;"><code><span style="color:#c0c5ce;"> @yields *args
+</span><span style="color:#c0c5ce;"> @see ThreadPuddle#block
+</span><span style="color:#c0c5ce;"> @return the new Thread object
+</span></code></pre>
+<h3><a href="#tpjoin--tp" aria-hidden="true" class="anchor" id="tpjoin--tp"></a><code>tp.join</code> → <em>tp</em></h3>
 <p>Waits for all threads in the puddle to join.</p>
-<pre><code> @return this ThreadPuddle object
-</code></pre>
-<h3><code>tp.kill</code> → int</h3>
+<pre style="background-color:#2b303b;"><code><span style="color:#c0c5ce;"> @return this ThreadPuddle object
+</span></code></pre>
+<h3><a href="#tpkill--int" aria-hidden="true" class="anchor" id="tpkill--int"></a><code>tp.kill</code> → int</h3>
 <p>Kills all threads in the puddle.</p>
-<pre><code> @return the number of threads killed
-</code></pre>
+<pre style="background-color:#2b303b;"><code><span style="color:#c0c5ce;"> @return the number of threads killed
+</span></code></pre>
 <hr />
 <p><a href="https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml"><img src="https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml/badge.svg" alt="Test" /></a></p>
 <pre id="license" class="no-highlight">Copyright (c) 2013, Matthew Kerwin &lt;matthew@kerwin.net.au&gt;

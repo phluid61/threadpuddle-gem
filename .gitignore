@@ -1,2 +1,6 @@
-threadpuddle-*.gem
-vendor
+*.gem
+.bundle/
+Gemfile.lock
+pkg/
+tmp/
+vendor/

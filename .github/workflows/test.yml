@@ -1,10 +1,25 @@
 name: Test
 
 on:
+  workflow_dispatch:
   push:
-    branches: [master]
+    branches: [main]
+    paths:
+      - 'lib/**'
+      - 'test/**'
+      - 'Gemfile'
+      - 'threadpuddle.gemspec'
+      - 'Rakefile'
+      - '.github/workflows/test.yml'
   pull_request:
-    branches: [master]
+    branches: [main]
+    paths:
+      - 'lib/**'
+      - 'test/**'
+      - 'Gemfile'
+      - 'threadpuddle.gemspec'
+      - 'Rakefile'
+      - '.github/workflows/test.yml'
 
 jobs:
   test:

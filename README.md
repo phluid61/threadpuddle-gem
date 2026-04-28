@@ -1,6 +1,10 @@
 ThreadPuddle
 ============
 
+[![Gem Version](https://badge.fury.io/rb/threadpuddle.png)](http://badge.fury.io/rb/threadpuddle)
+[![Test](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml/badge.svg)](https://github.com/phluid61/threadpuddle-gem/actions/workflows/test.yml)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v3.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+
 Like a smaller, lamer thread pool.
 
 ----
